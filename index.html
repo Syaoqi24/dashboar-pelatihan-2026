@@ -248,7 +248,7 @@
 <div class="topbar">
   <div class="topbar-left">
     <div class="logo-dot"></div>
-    <div class="topbar-title">BBPVP Bekasi — Pelatihan 2026</div>
+    <div class="topbar-title">BBPVP Bekasi — Uji Coba Program INTALA — Pelatihan 2026</div>
   </div>
   <div class="topbar-right">
     <div class="status-badge">
@@ -264,7 +264,7 @@
 
   <div class="page-header">
     <div class="page-title">Dashboard Realisasi Pelatihan</div>
-    <div class="page-sub">Data diambil langsung dari Google Sheets · PIC: Syaoqi</div>
+    <div class="page-sub">Data diambil langsung dari Google Sheets milik UJI Coba Program | INTALA</div>
   </div>
 
   <!-- ERROR BOX -->
@@ -514,7 +514,7 @@ function renderKPI(data) {
     <div class="kpi-card">
       <div class="kpi-label">Target Peserta</div>
       <div class="kpi-val">${totalTarget}</div>
-      <div class="kpi-sub">orang ditargetkan</div>
+      <div class="kpi-sub">total peserta</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Realisasi Peserta</div>
@@ -524,7 +524,7 @@ function renderKPI(data) {
     <div class="kpi-card ${isGood ? 'accent' : 'warn'}">
       <div class="kpi-label">Tingkat Penyerapan</div>
       <div class="kpi-val ${isGood ? 'cy' : 'warn'}">${serapan}%</div>
-      <div class="kpi-sub">${isGood ? '✓ target ≥90% tercapai' : '⚠ belum mencapai target 90%'}</div>
+      <div class="kpi-sub">${isGood ? '✓ target ≥90% tercapai' : '⚠ tidak mencapai 90%'}</div>
     </div>`;
 }
 
