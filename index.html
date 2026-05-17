@@ -529,14 +529,7 @@ function renderKPI(data) {
 }
 
 /* ── BAR CHART per jenis ── */
-function renderBarChart(data) {
-  const groups = {};
-  data.forEach(d => {
-    if (!groups[d.jenis]) groups[d.jenis] = { target: 0, real: 0 };
-    groups[d.jenis].target    += d.target;
-    groups[d.jenis].realisasi += d.realisasi;
-  });
-
+function renderBarChart(data)
   // Jika typo pada property (seharusnya real bukan realisasi di accumulator)
   // perbaiki: kita pakai real
   const groupsFixed = {};
